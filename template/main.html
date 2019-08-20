@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/mainfile.css') }}">
+    </head>
+    <body>
+        <div class="bgimage">
+            <div class="menu">
+                    <div class="leftmenu">
+                            
+                            <form action="/" method="POST" enctype="multipart/form-data">
+                                
+                                <input type="file" name= "file" />
+                                <input type="submit"/>
+
+                            </form>
+                    </div>
+            </div>
+            <div class="text">
+                <h4> TEMPLATE MANAGER</h4>
+                <h4>Using HTML-CSS And Python-Flask</h4>
+            </div>
+        </div>
+    </body>
+</html>

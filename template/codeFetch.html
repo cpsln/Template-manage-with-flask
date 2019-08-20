@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sign Up</title>
+         <link rel="stylesheet" href="{{ url_for('static', filename='styles/codefetch.css') }}"> 
+    </head>
+    <body>
+        <div class="box">
+            <h2>CODE FETCH</h2>
+
+            <form action="newData" >
+
+                {% for fetchdata in data %}
+                
+                    {{fetchdata}}
+
+                {% endfor %}
+                
+
+                <input type="submit" name="" value="Submit"> 
+
+            </form> 
+            
+        </div>
+        <div class="text">
+                <h4> TEMPLATE MANAGER</h4>
+                <h4>Using HTML-CSS And Python-Flask</h4>
+        </div>
+    </body>
+</html>
